@@ -1,6 +1,6 @@
-# Oracle-SQL
-# Exercises for me to excel in SQL and the homeworks I've done during my Master's Degree in SGH (coursework for Databases Build and Exploitation)
-# iacademy.oracle.com 
+# Oracle SQL
+# Exercises for me to excel in SQL and the homeworks I've done during my big data master's degree in SGH (coursework for Databases Build and Exploitation)
+
 
 # 1. read last name, first name and salary of all employees working in department 10 and with salary greater than 2000
     SELECT first_name, last_name, salary, department_id
