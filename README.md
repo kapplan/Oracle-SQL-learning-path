@@ -52,23 +52,23 @@
       AND (manager_id IS NOT NULL AND job_id ='ST_CLERK');
       
    d) a OR b
-      SELECT employee_id, last_name, first_name, salary, job_id, department_id
-      FROM employees
-      WHERE (department_id IN(10, 20) OR salary > 3000)
-      OR (manager_id IS NOT NULL AND job_id ='ST_CLERK');
-      
+          SELECT employee_id, last_name, first_name, salary, job_id, department_id
+          FROM employees
+          WHERE (department_id IN(10, 20) OR salary > 3000)
+          OR (manager_id IS NOT NULL AND job_id ='ST_CLERK');
+
    e) NOT ( a AND b)
-      SELECT employee_id, last_name, first_name, salary, job_id, department_id
-      FROM employees
-      WHERE NOT (department_id IN(10, 20) OR salary > 3000) 
-      AND (manager_id IS NOT NULL AND job_id ='ST_CLERK');
+          SELECT employee_id, last_name, first_name, salary, job_id, department_id
+          FROM employees
+          WHERE NOT (department_id IN(10, 20) OR salary > 3000) 
+          AND (manager_id IS NOT NULL AND job_id ='ST_CLERK');
       
    f) NOT a OR b
-      SELECT employee_id, last_name, first_name, salary, job_id, department_id
-      FROM employees
-      WHERE NOT (department_id IN(10, 20) OR salary > 3000)
-      OR (manager_id IS NOT NULL AND job_id ='ST_CLERK');
-      
+          SELECT employee_id, last_name, first_name, salary, job_id, department_id
+          FROM employees
+          WHERE NOT (department_id IN(10, 20) OR salary > 3000)
+          OR (manager_id IS NOT NULL AND job_id ='ST_CLERK');
+
 # 8. Who has the last name that consists of 4 letters and starts with K
       SELECT last_name
       FROM employees
@@ -77,6 +77,6 @@
 
 # 9. What are the last names, jobs of employees who work in 50 department
    and have the salary greater than 3000
-    SELECT last_name, job_id, department_id, salary
-    FROM employees
-    WHERE department_id = 10 AND salary > 3000;
+        SELECT last_name, job_id, department_id, salary
+        FROM employees
+        WHERE department_id = 10 AND salary > 3000;
