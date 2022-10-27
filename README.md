@@ -77,6 +77,6 @@
 
 # 9. What are the last names, jobs of employees who work in 50 department
    and have the salary greater than 3000
-        SELECT last_name, job_id, department_id, salary
-        FROM employees
-        WHERE department_id = 10 AND salary > 3000;
+         SELECT last_name, job_id, department_id
+         FROM employees
+         WHERE department_id = 10 AND salary > 3000;
