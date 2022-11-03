@@ -1,5 +1,4 @@
-# Oracle SQL
-# Exercises and the homeworks I've done during my big data master's degree in SGH ( & the coursework for Databases Build and Exploitation)
+# Oracle SQL - Exercises and the homeworks I've done during my big data master's degree in SGH
 
 #LAB3
 # 1. read last name, first name and salary of all employees working in department 10 and with salary greater than 2000
