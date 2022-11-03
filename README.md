@@ -94,17 +94,17 @@
 2. display last and first names of all employees hired no earlier, than in 1st of January of 2000
 3. display last and first names of all employees converted to upper cases
 4. display last and first names, hiredate and salary of all employees, hire date should
-      converted to varchar2 value and contain NAME of the month (for example: 21-JANUARY-1999)
+      converted to varchar2 value and contain NAME of the month (for example: 21-JANUARY-1999)  
       
-    SELECT last_name, first_name, salary, to_char(hire_date, 'DD-MONTH-YYYY')
-    FROM employees;
+        SELECT last_name, first_name, salary, to_char(hire_date, 'DD-MONTH-YYYY')
+        FROM employees;
 
 5. build a report containing department number, last name converted to upper case, first name also converted to upper case, salary increased by 25% and truncated to 2 decimal places      
    
-    SELECT department_id, upper(first_name), upper(last_name), salary, trunc(salary+(salary*25)/100, 2) 
-    FROM employees;
+        SELECT department_id, upper(first_name), upper(last_name), salary, trunc(salary+(salary*25)/100, 2) 
+        FROM employees;
     
 6. build a report containing last names of all employees, all occurences of K letter should be replaced with A
    
-    SELECT upper(last_name), replace(last_name, 'K', 'A')
-    FROM employees;
+        SELECT upper(last_name), replace(last_name, 'K', 'A')
+        FROM employees;
