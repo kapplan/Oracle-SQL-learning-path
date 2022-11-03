@@ -84,7 +84,7 @@
          WHERE department_id = 10 AND salary > 3000;
         
  
- #Single Row Functions
+# Single Row Functions
 1. display last and first names of all employees from department 10 and their salary increased by 10% and rounded to 2 decimal places
    
         SELECT first_name, last_name, salary, round(salary+(salary*10)/100, 2) AS salary_increased
